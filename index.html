@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Time Table</h1>
+
+    <table border="2" cellspacing="0" cellpadding="6">
+
+        <tbody><tr>
+            <th colspan="6">Time table</th>
+        </tr>
+        <tr>
+            <td rowspan="6"><b>Hours</b></td>
+            <td><b>Monday</b></td>
+            <td><b>Tuesday</b></td>
+            <td><b>Wednesday</b></td>
+            <td><b>Thursday</b></td>
+            <td><b>Friday</b></td>
+        </tr>
+
+        <tr>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Arts</td>
+        </tr>
+
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+
+        <tr>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td colspan="2" rowspan="2"><b>Project</b></td>
+        </tr>
+
+        <tr>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+        </tr>
+    </tbody></table>
+
+    <h1>Table 2</h1>
+
+    <table border="3" cellspacing="1" cellpadding="4">
+        <tbody><tr>
+            
+            <td>Device</td>
+            <td>Brand</td>
+            <td colspan="2">Specification</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Smartphone</td>
+            <td rowspan="3">Apple</td>
+            <td>Model</td>
+            <td>Storage</td>
+
+        </tr>
+
+        <tr>
+            <td>iphone 12 Pro</td>
+            <td>256GB</td>
+        </tr>
+
+        <tr>
+            <td>iphone SE</td>
+            <td>128GB</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>Hp</td>
+            <td colspan="2">15.6"Display</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>Samsung</td>
+            <td colspan="2">10.5"Display</td>
+        </tr>
+    </tbody></table>
+
+    <h1>Table 3</h1>
+
+    <table border="1" cellspacing="0">
+        <tbody><tr>
+            <th>Name</th>
+            <th>Job title</th>
+            <th>Email Address</th>
+        </tr>
+        <tr>
+            <td>Haider shah</td>
+            <td>Staff writer</td>
+            <td>example@company.com</td>
+        </tr>
+
+        <tr>
+            <td>Ali khan</td>
+            <td>Marketing Manager</td>
+            <td>example@company.com</td>
+        </tr>
+
+        <tr>
+            <td>Ahmed Sheikh</td>
+            <td>CEO</td>
+            <td>example@company.com</td>
+        </tr>
+    </tbody></table>
+
+    
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
